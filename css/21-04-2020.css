@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body h1 {
+    color: blue;
+    font-size: 40px;
+}
+p  {
+    color: green;
+    font-size: 16px;
+    border: 4px solid black;
+    padding: 30px;
+    margin: 50px;
+}
+
+body #p01 {
+    color: blue;
+}
+
+img {
+    border: 4px solid red;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 200px;
+}
+
+p .error {
+    color: red;
+}
+
+h1.error {
+    color: purple;
+    float: right;
+}
