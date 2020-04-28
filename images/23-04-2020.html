@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Page Title Changed</title>
+        <meta name="viewport" content="width=device-width, initial-scale=0.3">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML, CSS, XML, JavaScript">
+        <meta name="author" content="John Doe">
+        <meta http-equiv="refresh" content="30">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/23-04-2020.css">
+    </head>
+    <body>
+        <ul id="u01">
+            <li><a href="#home">Home</a></li>
+            <li><a id="link" href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+
+        <iframe src="../22-04-2020.html"></iframe>
+        <iframe src="https://www.emilioloveraof.com/"></iframe>
+
+        <h1 class="city main">London</h2>
+        <p>London is the capital of England.</p>
+
+        <div id="about">
+            <h2 class="city">Paris</h2>
+        <p>Paris is the capital of France.</p>
+
+        <h3 class="city">Tokyo</h2>
+        <p class="city">Tokyo is the capital of Japan.</p>
+        </div>
+
+        <h1 class="city main">London</h2>
+        <p>London is the capital of England.</p>
+        <h1 class="city main">London</h2>
+
+        <h1>My First JavaScript</h1>
+
+        <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+            Click me to display Date and Time.
+        </button>
+
+        <button type="button" onclick="hello()">
+            Click me to display Hello worl.
+        </button>
+        
+        <p id="demo"></p>
+
+        <script>
+            function hello() {
+                document.getElementById("demo").innerHTML = "Hello JavaScript!";
+                document.getElementById("demo").style.fontSize = "25px";
+                document.getElementById("demo").style.color = "red";
+                document.getElementById("demo").style.backgroundColor = "yellow";
+                document.getElementById("link").href = "#about";
+
+            }
+        </script>
+    </body>
+</html>

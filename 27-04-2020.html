@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Page Title</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/27-04-2020.css">
+    </head>
+    <body>
+
+        <h2>Text input fields</h2>
+
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John" readonly><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe" disabled><br><br>
+            <input type="submit" value="Send the information">
+        </form>
+
+        <form>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
+            <select id="cars" name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+              </select><br>
+
+              <textarea name="message" rows="20" cols="50">
+                The cat was playing in the garden.
+                </textarea>
+          </form>
+
+          <form action="/action_page.php">
+            <fieldset>
+              <legend>Info personal:</legend>
+              <input list="browsers">
+                <datalist id="browsers">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+            </fieldset>
+
+            <fieldset>
+                <legend>Info del guebio mio:</legend>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="Put here your first name: " size="50" required><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe" maxlength="4" ><br><br>
+                <input type="submit" value="Submit">
+              </fieldset>
+          </form>
+
+          <form action="/action_page.php"
+            oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            0
+            <input type="range"  id="a" name="a" value="50">
+            100 +
+            <input type="number" id="b" name="b" value="50">
+            =
+            <output name="x" for="a b"></output>
+            <br><br>
+            <input type="submit">
+        </form>
+        <br><br>
+        <br><br>
+        <br><br>
+        <form action="">
+            <input type="button" value="Submit">
+            <input type="checkbox">
+            <input type="color">
+            <input type="date">
+            <input type="datetime-local">
+            <input type="email">
+            <input type="file">
+            <input type="hidden">
+            <input type="image">
+            <input type="month">
+            <input type="number">
+            <input type="password">
+            <input type="radio">
+            <input type="range">
+            <input type="reset">
+            <input type="search">
+            <input type="submit">
+            <input type="tel">
+            <input type="text">
+            <input type="time">
+            <input type="url">
+            <input type="week">
+        </form>
+          
+        <form>
+            <label for="datemax">Enter a date before 1980-01-01:</label>
+            <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+          
+            <label for="datemin">Enter a date after 2000-01-01:</label>
+            <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+          
+            <label for="quantity">Quantity (between 1 and 5):</label>
+            <input type="number" id="quantity" name="quantity" min="0" max="50" step="5">
+          </form>
+          
+
+        <p>Note that the form itself is not visible.</p>
+
+        <p>Also note that the default width of text input fields is 20 characters.</p>
+    </body>
+</html>
