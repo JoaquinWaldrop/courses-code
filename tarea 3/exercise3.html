@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="number" name="day" id="day" min="1" max="31" placeholder="day">
+        <input type="number" name="month" id="month" min="1" max="12" placeholder="month">
+        <input type="number" name="year" id="year" min="1900" max="2020" placeholder="year">
+        <input type="submit" onclick="calculate(event)" value="Calculate AGE">
+
+        <p id="errorDay"></p>
+        <p id="errorMonth"></p>
+        <p id="errorYear"></p>
+        <p id="result"></p>
+    </form>
+    <script src="exercise3.js"></script>
+</body>
+</html>
